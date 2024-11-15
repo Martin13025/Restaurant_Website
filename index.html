@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Mesa Espléndida</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#form">Reserva</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Bienvenidos a La Mesa Espléndida</h1>
+        <p>Disfruta de una experiencia única de sabores</p>
+      </div>
+    </header>
+
+    <section id="parallax">
+      <div class="parallax-overlay">
+        <h2>La Mesa Espléndida</h2>
+        <div class="parallax-image"></div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Galería de Platos</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./imgs/plato1.jpeg" alt="Plato 1" />
+          <p>Carne Asada</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./imgs/plato2.jpg" alt="Plato 2" />
+          <p>Chuletas de Cordero</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./imgs/plato3.png" alt="Plato 3" />
+          <p>Estofado de Ternera</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./imgs/plato4.png" alt="Plato 4" />
+          <p>Costillas al Horno</p>
+        </div>
+        <div class="gallery-item center-image">
+          <img src="./imgs/plato5.jpg" alt="Plato 5" />
+          <p>Solomillo a la Parrilla</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>Descubre nuestra cocina</h2>
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ByE6mvdGUYM?si=Khpd6lBb1VoBre8K"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="form">
+      <h2>Reserva tu mesa</h2>
+      <form action="thankyou.html" method="GET">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required />
+        <label for="date">Fecha</label>
+        <input type="date" id="date" name="date" required />
+        <label for="time">Hora</label>
+        <input type="time" id="time" name="time" required />
+        <button type="submit">Confirmar Reserva</button>
+      </form>
+
+      <hr />
+      <label for="modal1-toggle" class="open-modal"
+        >Información de la reserva</label
+      >
+      <label for="modal2-toggle" class="open-modal"
+        >¿Quieres más detalles?</label
+      >
+    </section>
+
+    <!-- Modal 1 -->
+    <input type="checkbox" id="modal1-toggle" class="modal-toggle" />
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <label for="modal1-toggle" class="close-btn">&times;</label>
+        <h3>Información de la reserva</h3>
+        <p>
+          Gracias por reservar con nosotros. Nos pondremos en contacto a la
+          brevedad.
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <input type="checkbox" id="modal2-toggle" class="modal-toggle" />
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <label for="modal2-toggle" class="close-btn">&times;</label>
+        <h3>¿Quieres más detalles?</h3>
+        <p>
+          Visita nuestra página web para conocer más sobre nuestro menú y
+          eventos especiales.
+        </p>
+      </div>
+    </div>
+
+    <footer id="contact">
+      <p>&copy; 2024 La Mesa Espléndida | Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
